@@ -1,4 +1,4 @@
-# Trabalho G1 - Front-End
+# Construção de Página Web com HTML e CSS
 
 ## Aluno
 Nome: KÉLEN CAMARGO DOS SANTOS  
@@ -13,3 +13,6 @@ Commit 1: Criada a estrutura inicial do projeto e o repositório no GitHub
 
 Commit 2: Adicionada a estrutura HTML semântica e acessível da página
 
+
+
+Trabalho desenvolvido para a disciplina Front End.

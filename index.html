@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Clone Google - Trabalho Front-End</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav aria-label="Navegação principal">
+    <header class="cabecalho">
+        <nav class="navegacao-superior" aria-label="Navegação principal">
             <a href="#">Gmail</a>
             <a href="#">Imagens</a>
             <a href="#">Aplicativos</a>
-            <a href="#">Fazer login</a>
+            <a href="#" class="botao-login">Fazer login</a>
         </nav>
     </header>
 
-    <main>
-        <section>
+
+    <main class="conteudo-principal">
+
+        <section
+            class="area-pesquisa"
+            aria-label="Pesquisa Google"
+        >
+
             <img
+                class="logo-google"
                 src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="Logo do Google"
             >
 
-            <form action="https://www.google.com/search" method="get">
-                <label for="pesquisa">
+            <form
+                class="formulario-pesquisa"
+                action="https://www.google.com/search"
+                method="get"
+            >
+
+                <label
+                    for="pesquisa"
+                    class="label-pesquisa"
+                >
                     Pesquisar no Google
                 </label>
 
                 <input
+                    class="campo-pesquisa"
                     type="search"
                     id="pesquisa"
                     name="q"
+                    autocomplete="off"
                 >
 
-                <div>
+                <div class="acoes-pesquisa">
+
                     <button type="submit">
                         Pesquisa Google
                     </button>
@@ -44,32 +65,50 @@
                     <button type="button">
                         Estou com sorte
                     </button>
+
                 </div>
+
             </form>
+
         </section>
+
     </main>
 
-    <footer>
-        <section>
-            <p>Brasil</p>
-        </section>
 
-        <nav aria-label="Links do rodapé">
-            <a href="#">Sobre</a>
-            <a href="#">Publicidade</a>
-            <a href="#">Negócios</a>
-            <a href="#">Como funciona a Pesquisa</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos</a>
-            <a href="#">Configurações</a>
+    <footer class="rodape">
+
+        <div class="rodape-pais">
+            <p>Brasil</p>
+        </div>
+
+        <nav
+            class="navegacao-rodape"
+            aria-label="Links do rodapé"
+        >
+
+            <div class="links-rodape">
+                <a href="#">Sobre</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Como funciona a Pesquisa</a>
+            </div>
+
+            <div class="links-rodape">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
+
         </nav>
 
-        <section>
+        <div class="informacoes-projeto">
             <p>
                 Clone acadêmico desenvolvido para a disciplina de Front-End.
             </p>
-        </section>
+        </div>
+
     </footer>
 
 </body>
+
 </html>

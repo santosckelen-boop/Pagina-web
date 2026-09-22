@@ -142,12 +142,14 @@ a {
     width: 100%;
     height: 46px;
 
-    padding: 0 18px;
+    padding: 0 20px;
 
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-pesquisa);
 
     font-size: 16px;
+    color: var(--cor-texto);
+
     outline: none;
 }
 
@@ -164,15 +166,9 @@ a {
    BOTÕES DE PESQUISA
    ============================== */
 
-.acoes-pesquisa {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    margin-top: 28px;
-}
-
 .acoes-pesquisa button {
+    min-width: 130px;
+
     padding: 10px 16px;
 
     border: 1px solid transparent;
@@ -181,12 +177,16 @@ a {
     background-color: var(--cor-botao);
     color: var(--cor-texto);
 
+    font-family: Arial, sans-serif;
     font-size: 14px;
-    cursor: pointer;
+
+    cursor: pointer;    
 }
 
 .acoes-pesquisa button:hover {
     border-color: #dadce0;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -252,4 +252,49 @@ a {
     margin: 0;
 
     font-size: 12px;
+}
+
+/* ==============================
+   TELAS MAIORES - DESKTOP
+   ============================== */
+
+@media (min-width: 768px) {
+
+    .cabecalho {
+        padding: 12px 20px;
+    }
+
+    .navegacao-superior {
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    .botao-login {
+        padding: 10px 24px;
+    }
+
+    .conteudo-principal {
+        padding-top: 90px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo-google {
+        width: 272px;
+        margin-bottom: 28px;
+    }
+
+    .acoes-pesquisa {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navegacao-rodape {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links-rodape {
+        justify-content: flex-start;
+    }
 }

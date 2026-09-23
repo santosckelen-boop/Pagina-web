@@ -64,12 +64,14 @@ a {
 }
 
 .botao-login {
-    padding: 10px 16px;
+    padding: 10px 20px;
 
     color: white;
     background-color: var(--cor-login);
 
-    border-radius: 20px;
+    border-radius: 4px;
+
+    font-weight: 500;
 }
 
 .botao-login:hover {
